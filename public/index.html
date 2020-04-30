@@ -6,8 +6,18 @@
 </head>
 
 <body>
-<button id='get-commit'> Get commits for repo :freecodecamp</button>
-<div id='commit-result'></div>
+    <div class="input-container">
+        <input type="text" class="git-input" placeholder="Git user name" id="git-user"  />
+        <input type="text" class="git-input"  placeholder="Git repo name" id="git-repo" />
+        <label>Start Date</label> <input class="select-date" type="date" id="start-date">
+        <label>End Date</label> <input class="select-date" type="date" id="end-date">
+        <button class="git-input" id='get-commit'> GET DETAIL</button>
+    </div>
+
+<div class="timeline" id="response">
+    <ul id='commit-result'></ul>
+</div>
 </body>
 <script src="./script/index.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/index.css"> 
 </html>
